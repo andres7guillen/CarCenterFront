@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" >Car Center App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/clienteListar">Clientes</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/mantenimientoListar">Mantenimientos</a>
+        </li>   
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/marcaListar">Marcas</a>
+        </li>            
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/mecanicoListar">Mecanicos</a>
+        </li> 
+        <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="/repuestoListar">Repuestos</a>
+          </li> 
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="/servicioListar">Servicios</a>
+          </li> 
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="/vehiculoListar">Vehículos</a>
+          </li> 
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <!-- <button [disabled]="estaLogueado" class="btn btn-outline-danger" (click)="salir()">Salir</button> -->
+      </form>
+    </div>
+  </nav>
