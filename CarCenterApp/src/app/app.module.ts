@@ -40,6 +40,7 @@ import { ServicioEditarComponent } from './components/Servicio/servicio-editar/s
 import { VehiculoCrearComponent } from './components/Vehiculo/vehiculo-crear/vehiculo-crear.component';
 import { VehiculoDetalleComponent } from './components/Vehiculo/vehiculo-detalle/vehiculo-detalle.component';
 import { VehiculoEditarComponent } from './components/Vehiculo/vehiculo-editar/vehiculo-editar.component';
+import { FacturacionComponent } from './components/facturacion/facturacion.component';
 
 @NgModule({
   declarations: [
@@ -75,7 +76,8 @@ import { VehiculoEditarComponent } from './components/Vehiculo/vehiculo-editar/v
     ClienteDetalleComponent,
     ClienteCrearComponent,
     ClienteEditarComponent,
-    NavComponent
+    NavComponent,
+    FacturacionComponent
   ],
   imports: [
     BrowserModule,

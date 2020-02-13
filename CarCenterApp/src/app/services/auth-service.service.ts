@@ -11,7 +11,7 @@ export class AuthServiceService {
   private url:string = 'https://localhost:44397/api/Cuenta';
   private headers = new HttpHeaders({
     'Content-type': 'application/json'    
-});
+  });
 
   constructor(private http:HttpClient) { }
 

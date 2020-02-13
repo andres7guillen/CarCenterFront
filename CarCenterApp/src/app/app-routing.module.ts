@@ -33,6 +33,7 @@ import { VehiculoCrearComponent } from './components/Vehiculo/vehiculo-crear/veh
 import { VehiculoDetalleComponent } from './components/Vehiculo/vehiculo-detalle/vehiculo-detalle.component';
 import { VehiculoEditarComponent } from './components/Vehiculo/vehiculo-editar/vehiculo-editar.component';
 import { AuthGuard } from '../app/guards/auth-guard.guard';
+import { FacturacionComponent } from './components/facturacion/facturacion.component';
 
 const routes: Routes = [
   
@@ -45,7 +46,7 @@ const routes: Routes = [
     {path:'clienteDetalle/:id', component: ClienteDetalleComponent, canActivate:[ AuthGuard ]},
     {path:'clienteEditar/:id', component:ClienteEditarComponent, canActivate:[ AuthGuard ]},
     //MANTENIMIENTO
-    {path:'mantenimientoListar',component:MantenimientoListarComponent}/*, canActivate:[ AuthGuard ]*/,
+    {path:'mantenimientoListar',component:MantenimientoListarComponent, canActivate:[ AuthGuard ]},
     {path:'mantenimientoCrear', component:MantenimientoCrearComponent, canActivate:[ AuthGuard ]},
     {path:'mantenimientoDetalle/:id', component:MantenimientoDetalleComponent, canActivate:[ AuthGuard ]},
     {path:'mantenimientoEditar/:id', component:MantenimientoEditarComponent, canActivate:[ AuthGuard ]},
@@ -53,30 +54,33 @@ const routes: Routes = [
 
     //MARCA
     {path:'marcaListar', component:MarcaListarComponent, canActivate:[ AuthGuard ]},
-    {path:'marcaCrear', component:MarcaCrearComponent, canActivate:[ AuthGuard ]},
+{path:'marcaCrear', component:MarcaCrearComponent, canActivate:[ AuthGuard ]},
     {path:'marcaDetalle/:id',component:MarcaDetalleComponent, canActivate:[ AuthGuard ]},
-    {path:'marcaEditar/:id', component:MarcaEditarComponent, canActivate:[ AuthGuard ]},
+{path:'marcaEditar/:id', component:MarcaEditarComponent, canActivate:[ AuthGuard ]},
 
     //MECANICO
-    {path:'mecanicoListar', component:MecanicoListarComponent, canActivate:[ AuthGuard ]},
+{path:'mecanicoListar', component:MecanicoListarComponent, canActivate:[ AuthGuard ]},
     {path:'mecanicoCrear}', component:MecanicoCrearComponent, canActivate:[ AuthGuard ]},
-    {path:'mecanicoDetalle/:id', component:MecanicoDetalleComponent, canActivate:[ AuthGuard ]},
+{path:'mecanicoDetalle/:id', component:MecanicoDetalleComponent, canActivate:[ AuthGuard ]},
     {path:'mecanicoEditar/:id', component:MecanicoEditarComponent, canActivate:[ AuthGuard ]},
     //REPUESTO
-    {path:'repuestoListar',component:RepuestoListarComponent, canActivate:[ AuthGuard ]},
+{path:'repuestoListar',component:RepuestoListarComponent, canActivate:[ AuthGuard ]},
     {path:'repuestoCrear',component:RepuestoCrearComponent, canActivate:[ AuthGuard ]},
-    {path:'repuestoDetalle/:id', component:RepuestoDetalleComponent, canActivate:[ AuthGuard ]},
+{path:'repuestoDetalle/:id', component:RepuestoDetalleComponent, canActivate:[ AuthGuard ]},
     {path:'repuestoEditar/:id', component:RepuestoEditarComponent, canActivate:[ AuthGuard ]},
     //SERVICIO
-    {path:'servicioListar', component:ServicioListarComponent, canActivate:[ AuthGuard ]},
+{path:'servicioListar', component:ServicioListarComponent, canActivate:[ AuthGuard ]},
     {path:'servicioCrear', component:ServicioCrearComponent, canActivate:[ AuthGuard ]},
-    {path:'servicioDetalle/:id',component:ServicioDetalleComponent, canActivate:[ AuthGuard ]},
+{path:'servicioDetalle/:id',component:ServicioDetalleComponent, canActivate:[ AuthGuard ]},
     {path:'servicioEditar',component:ServicioEditarComponent, canActivate:[ AuthGuard ]},
     //VEHICULO
-    {path:'vehiculoListar',component:VehiculoListarComponent, canActivate:[ AuthGuard ]},
+{path:'vehiculoListar',component:VehiculoListarComponent, canActivate:[ AuthGuard ]},
     {path:'vehiculoCrear',component:VehiculoCrearComponent, canActivate:[ AuthGuard ]},
-    {path:'vehiculoDetalle/:id',component:VehiculoDetalleComponent, canActivate:[ AuthGuard ]},
+{path:'vehiculoDetalle/:id',component:VehiculoDetalleComponent, canActivate:[ AuthGuard ]},
     {path:'vehiculoEditar/:id',component:VehiculoEditarComponent, canActivate:[ AuthGuard ]},
+
+    //FACTURACION
+{path:'facturacion', component:FacturacionComponent, canActivate:[AuthGuard]},
 
     {path:'**', redirectTo:'registro'}
 
