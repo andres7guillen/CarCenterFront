@@ -1,1 +1,79 @@
-<p>cliente-editar works!</p>
+<div class="row text-right">
+  <div class="col">
+    <button 
+  routerLink="/clienteListar"
+  class="btn btn-danger">
+    <i class="fa fa-arrow-left"> Regresar</i>
+  </button>
+  </div>  
+</div>
+
+<div class="row animated fadeIn faster">
+    <div class="col">
+      <form #f="ngForm" (ngSubmit)="actualizar(f)">
+  
+        <div class="row">
+        <div class="form-group col-md-6">
+          <label>Primer nombre:</label>
+          <input required type="text" maxlength="30" [(ngModel)]="cliente.primerNombre" name="primerNombre"  class="form-control">
+        </div>
+        <div class="form-group col-md-6">
+          <label>Segundo nombre:</label>
+          <input type="text" maxlength="30" [(ngModel)]="cliente.segundoNombre" name="segundoNombre"  class="form-control">
+        </div>
+        <div class="form-group col-md-6">
+          <label>Primer apellido</label>
+          <input required type="text" maxlength="30" [(ngModel)]="cliente.primerApellido" name="primerApellido"  class="form-control">
+        </div>
+        <div class="form-group col-md-6">
+          <label>Segundo apellido</label>
+          <input type="text" maxlength="30" [(ngModel)]="cliente.segundoApellido" name="segundoApellido"  class="form-control">
+        </div>
+        <div class="form-group col-md-6">
+          <label>Celular:</label>
+          <input required type="text" maxlength="10" [(ngModel)]="cliente.celular" name="celular" class="form-control">
+        </div>
+  
+        <div class="form-group col-md-6">
+          <label>Email:</label>
+          <input required type="text" maxlength="100" [(ngModel)]="cliente.email" name="email"   class="form-control">
+        </div>
+  
+        <div class="form-group col-md-6">
+          <label>Dirección::</label>
+          <input type="text" maxlength="200" [(ngModel)]="cliente.direccion" name="direccion"   class="form-control">
+        </div>
+  
+        <div class="form-group col-md-6">
+          <label>Tipo documento:</label>
+          <select [(ngModel)]="cliente.tipoDocumento" name="tipoDocumento">
+              <option value="cc">CC</option>
+              <option value="ti">TI</option>
+              <option value="ce">CE</option>
+          </select>
+          
+        </div>
+  
+        <div class="form-group col-md-6">
+          <label>Documento:</label>
+          <input type="text" maxlength="15" [(ngModel)]="cliente.documento" name="documento"   class="form-control">
+        </div>
+  
+        <div class="form-group col-md-6">
+          <label>Presupuesto:</label>
+          <input type="number" maxlength="30" [(ngModel)]="cliente.presupuestoMaximo" name="presupuesto"   class="form-control">
+        </div> 
+        <hr>
+        <div class="form-group text-center col-md-6">
+          <button type="submit" class="btn btn-primary w-25">
+            <i class="fa fa-save"></i>
+            Guardar
+          </button>
+        </div>
+
+      </div>
+  
+      </form>
+  
+    </div>
+  </div>

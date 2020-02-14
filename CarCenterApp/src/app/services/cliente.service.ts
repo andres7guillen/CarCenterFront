@@ -20,7 +20,7 @@ export class ClienteService {
   }
 
   actualizarCliente(cliente:ClienteModel){
-    return this.http.put(this.url + "Actualizar",JSON.stringify(cliente),{headers: this.headers})
+    return this.http.put(this.url + "actualizar",JSON.stringify(cliente),{headers: this.headers})
   }
 
   obtenerClientes(){
@@ -31,7 +31,7 @@ export class ClienteService {
   }
 
   obtenerEmpleadoPorId(id:string){
-    return this.http.get(this.url + 'ObtenerPorId?IdEmpleado='  + id);
+    return this.http.get(this.url + id,{headers:this.headers});
   }
 
   borrarCliente(id:string){

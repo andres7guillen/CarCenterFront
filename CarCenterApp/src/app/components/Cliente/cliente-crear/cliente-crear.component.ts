@@ -21,7 +21,7 @@ export class ClienteCrearComponent implements OnInit {
     this.cliente = new ClienteModel();
   }
 
-  guardar(f:NgForm){debugger
+  guardar(f:NgForm){
     if(f.valid)
     {
       Swal.fire({

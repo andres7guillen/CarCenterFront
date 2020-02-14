@@ -23,7 +23,6 @@ export class ClienteListarComponent implements OnInit {
     this.clienteService.obtenerClientes().subscribe((data) => {
       if(data != undefined){
         this.listado = data;
-        console.log(data);
       }
     },(error) => {
       console.log(error); 
@@ -57,8 +56,7 @@ export class ClienteListarComponent implements OnInit {
               title: 'Correcto',
               text: 'Cliente:  ' + cliente.primerNombre + cliente.segundoNombre + ' borrado correctamente',
               allowOutsideClick: false
-            });
-            // this.router.navigateByUrl('empleados');
+            });            
           }
         })
       }

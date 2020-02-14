@@ -1,13 +1,13 @@
 import { VehiculoModel } from "./vehiculo.model";
 
 interface IMarca{
-    Id: string;        
-    NombreMarca: string;
-    Vehiculos : VehiculoModel[];
+    id: string;        
+    nombreMarca: string;
+    vehiculos : VehiculoModel[];
 }
 
 export class MarcaModel implements IMarca{
-    Id: string;        
-    NombreMarca: string;
-    Vehiculos : VehiculoModel[];
+    id: string;        
+    nombreMarca: string;
+    vehiculos : VehiculoModel[];
 }

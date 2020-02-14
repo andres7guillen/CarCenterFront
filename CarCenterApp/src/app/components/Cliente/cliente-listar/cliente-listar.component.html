@@ -33,7 +33,7 @@
     <td>{{cliente.tipoDocumento}} : {{cliente.documento}}</td>
       <td>
         <button class="btn btn-info mr-1"
-        [routerLink]="['/empleadoEditar', cliente.id]">
+        [routerLink]="['/clienteEditar', cliente.id]">
           <i class="fa fa-pencil"></i>  
         </button>
         <button (click)="borrarCliente(cliente)" class="btn btn-danger mr-1">
